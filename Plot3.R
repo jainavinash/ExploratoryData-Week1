@@ -12,8 +12,7 @@ Plot3 <- function()
   subMetering2 <- as.numeric(data_new$Sub_metering_2)
   subMetering3 <- as.numeric(data_new$Sub_metering_3)
   
-#  print(subMetering1)
-  
+
   png("plot3.png", width=480, height=480)
   
   plot(data_new$Datetime, subMetering1, type="l", ylab="Energy Submetering", xlab="")  
